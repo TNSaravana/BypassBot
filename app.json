@@ -1,1 +1,48 @@
-
+{
+    "name": "biisal",
+    "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @biisal",
+    "keywords": [
+        "telegram",
+        "stream",
+        "web",
+        "pyrogram",
+        "aiohttp",
+        "python",
+        "plugin",
+        "modular",
+        "media",
+        "bot"
+    ],
+    "repository": "https://github.com/biisal/biisal-file-stream-pro/",
+    "success_url": "/",
+    "logo": "https://i.postimg.cc/jjgVnXrV/20231106-110427.png",
+    "website": "https://biisal.github.io/biisal",
+    "env": {
+        "ENV": {
+            "description": "Set this to True if you don't want to crash the bot",
+            "value": "True"
+        },
+        "APP_NAME": {
+            "description": "Copy-Paste the app name that you just typed above."
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org"
+        },
+        "BOT_TOKEN": {
+            "description": "Get this value from @BotFather"
+        },        
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "Basic"
+        }
+    }
+}
